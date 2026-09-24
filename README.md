@@ -1,4 +1,4 @@
-# Expanded-resolution-DG640-VDU-implementation
+# Enhanced-resolution-DG640-VDU-implementation
 A vhdl implementation of the DG640 VDU and PCG, further expanded to 80 x 25 resolution and colour.
 
 This commit further extends the DG640 vhdl implementation, by taking the native resolution

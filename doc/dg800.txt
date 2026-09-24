@@ -1,0 +1,52 @@
+Specification
+-------------
+
+1.	Change from '64 x 16' to '80 x 25' 
+
+2.	Add A12 Address line
+
+3.	Increase Character RAM block from 1KB to 2KB (2048)
+
+4.	Change Attribute RAM block from 1KB to 2KB (2048)
+
+5.	Remove Inverse characters from Normal Character Rom
+
+6.	Bit 7 of Character Block (was the inverse bit) now becomes PCG Ram selection bit, when normal characters enabled in attribute byte
+
+7.	Add background colour feature
+
+8.	Change Attribute format to the following
+
+
+	7   6   5   4   3   2   1   0
+
+	R   G   B   BR  BG  BB  x   y
+
+		R = Foreground Red
+		G = Foreground Green
+		B = Foreground Blue
+
+		BR = Background Red
+		BG = Background Green
+		BB = Background Blue
+
+		X = 0 = Normal Characters, 1 = Graphics ROM
+		
+		Y = 0 = Not Flashing , 1 = Flashing
+
+
+New Memory Map
+--------------
+
+0000 - 07FF	Character RAM Block (2K)
+
+0800 - 0FFF	Attribute RAM Block (2K)
+
+1000 - 17FF	Programmable Character Generator RAM (2K)
+
+
+Notes
+-----
+Character and Attribute RAM is slightly larger than the required memory to address the 80x25 format, 
+however I want the page boundry addresses to be consistent. The full memory (2048) should be addressable from the host, 
+but the Hcounter and Vcounter will only access the first 2000 bytes (80 x 25) in each block. 

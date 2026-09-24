@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Dropbox/projects/DG640VDU/vga_sys_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="vga_sys_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/vga_sys_tb/clk_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sys_tb/haddr_cnt_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">haddr_cnt_out[9:0]</obj_property>
+      <obj_property name="ObjectShortName">haddr_cnt_out[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sys_tb/vaddr_cnt_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">vaddr_cnt_out[9:0]</obj_property>
+      <obj_property name="ObjectShortName">vaddr_cnt_out[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sys_tb/hsync_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hsync_out</obj_property>
+      <obj_property name="ObjectShortName">hsync_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sys_tb/vsync_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vsync_out</obj_property>
+      <obj_property name="ObjectShortName">vsync_out</obj_property>
+   </wvobject>
+</wave_config>

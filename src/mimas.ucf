@@ -1,0 +1,74 @@
+
+NET "clk_in" TNM_NET = "clk_in";
+NET "clk_in" LOC = "P126";
+TIMESPEC TS_clk_in = PERIOD "clk_in" 100 MHz;
+
+# VGA Interface P1
+NET "red_out" 		  LOC = P29  | IOSTANDARD = LVCMOS33    ;
+NET "green_out" 	  LOC = P32  | IOSTANDARD = LVCMOS33    ;
+NET "blue_out" 	  LOC = P34  | IOSTANDARD = LVCMOS33    ;
+NET "hsync_out" 	  LOC = P23  | IOSTANDARD = LVCMOS33    ;
+NET "vsync_out" 	  LOC = P16  | IOSTANDARD = LVCMOS33    ;
+
+# Bus Interface P2   No Pullups!
+NET "addr_in[0]"    LOC = P92  | IOSTANDARD = LVCMOS33    ;
+NET "addr_in[1]"    LOC = P93  | IOSTANDARD = LVCMOS33    ;
+NET "addr_in[2]"    LOC = P94  | IOSTANDARD = LVCMOS33    ;
+NET "addr_in[3]"    LOC = P95  | IOSTANDARD = LVCMOS33    ;
+
+NET "addr_in[4]"    LOC = P97  | IOSTANDARD = LVCMOS33    ;
+NET "addr_in[5]"    LOC = P98  | IOSTANDARD = LVCMOS33    ;
+NET "addr_in[6]"    LOC = P99  | IOSTANDARD = LVCMOS33    ; 
+NET "addr_in[7]"    LOC = P100 | IOSTANDARD = LVCMOS33    ;
+
+NET "addr_in[8]"    LOC = P101 | IOSTANDARD = LVCMOS33    ;
+NET "addr_in[9]"    LOC = P102 | IOSTANDARD = LVCMOS33    ;
+NET "addr_in[10]"   LOC = P104 | IOSTANDARD = LVCMOS33    ;
+NET "addr_in[11]"   LOC = P105 | IOSTANDARD = LVCMOS33    ;
+NET "addr_in[12]"   LOC = P134 | IOSTANDARD = LVCMOS33    ;
+
+NET "data_inout[0]" LOC = P43  | IOSTANDARD = LVCMOS33    ;
+NET "data_inout[1]" LOC = P45  | IOSTANDARD = LVCMOS33    ;
+NET "data_inout[2]" LOC = P47  | IOSTANDARD = LVCMOS33    ;
+NET "data_inout[3]" LOC = P50  | IOSTANDARD = LVCMOS33    ;
+NET "data_inout[4]" LOC = P55  | IOSTANDARD = LVCMOS33    ;
+NET "data_inout[5]" LOC = P74  | IOSTANDARD = LVCMOS33    ;
+NET "data_inout[6]" LOC = P78  | IOSTANDARD = LVCMOS33    ;
+NET "data_inout[7]" LOC = P80  | IOSTANDARD = LVCMOS33    ; 
+
+NET "ce_n_in" 		  LOC = P87  | IOSTANDARD = LVCMOS33    ;
+NET "rnw_in" 		  LOC = P82  | IOSTANDARD = LVCMOS33    ;
+NET "p2_in" 		  LOC = P84  | IOSTANDARD = LVCMOS33    ;
+
+
+## VGA Interface
+#NET "red_out" 		  LOC = P34  | IOSTANDARD = LVCMOS33    ;
+#NET "green_out" 	  LOC = P32  | IOSTANDARD = LVCMOS33    ;
+#NET "blue_out" 	  LOC = P29  | IOSTANDARD = LVCMOS33    ;
+#NET "hsync_out" 	  LOC = P26  | IOSTANDARD = LVCMOS33    ;
+#NET "vsync_out" 	  LOC = P23  | IOSTANDARD = LVCMOS33    ;
+#
+## Bus Interface
+#NET "addr_in[0]"    LOC = P92  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "addr_in[1]"    LOC = P87  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "addr_in[2]"    LOC = P84  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "addr_in[3]"    LOC = P82  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "addr_in[4]"    LOC = P80  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "addr_in[5]"    LOC = P78  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "addr_in[6]"    LOC = P74  | IOSTANDARD = LVCMOS33    | PULLUP; 
+#NET "addr_in[7]"    LOC = P55  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "addr_in[8]"    LOC = P50  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "addr_in[9]"    LOC = P47  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "addr_in[10]"   LOC = P45  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "addr_in[11]"   LOC = P43  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "data_inout[0]" LOC = P141 | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "data_inout[1]" LOC = P1   | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "data_inout[2]" LOC = P5   | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "data_inout[3]" LOC = P7   | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "data_inout[4]" LOC = P9   | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "data_inout[5]" LOC = P11  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "data_inout[6]" LOC = P14  | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "data_inout[7]" LOC = P16  | IOSTANDARD = LVCMOS33    | PULLUP; 
+#NET "ce_n_in" 		  LOC = P133 | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "rnw_in" 		  LOC = P137 | IOSTANDARD = LVCMOS33    | PULLUP;
+#NET "p2_in" 		  LOC = P139 | IOSTANDARD = LVCMOS33    | PULLUP;

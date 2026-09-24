@@ -1,0 +1,22 @@
+
+Host Connections
+----------------
+__
+CE 		Chip Enable 
+  _
+R/W 		Read Write
+
+D0 - D7		Data Bus
+
+A0 - A11	Address Bus
+
+
+Memory Map
+----------
+
+0000 - 03FF	Character RAM Block
+
+0400 - 07FF	Attribute RAM Block
+
+0800 - 0FFF	Programmable Character Generator RAM
+
